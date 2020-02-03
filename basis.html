@@ -15,6 +15,8 @@
         <!-- git  -->
         <!-- https://backlog.com/git-tutorial/tw/reference/basic.html -->
     
+        <!-- git版本 -->
+        git --version
 
         #在GitHub 建立空白 Git 儲存庫，然後透過 git clone 取得遠端儲存庫，再建立版本後上傳
         1.先去 githup 建立 new repository 複製 https://github.com/sstudentr123/檔案名稱.git
@@ -34,6 +36,15 @@
 
 
         #本地 Git 儲存庫上傳到指定的 GitHub 專案
+            1.先在本地(終端機)鍵入 git init 
+            2.後再新增檔案，提交添加到索引的檔案
+            3.在指定remote add origin遠端儲存庫在哪 https://github.com/sstudentr123/test.git
+                git init
+                echo "# test" >> README.md
+                git add README.md
+                git commit -m "first commit"
+                git remote add origin https://github.com/sstudentr123/test.git
+                git push -u origin master
     </pre>
 </body>
 
