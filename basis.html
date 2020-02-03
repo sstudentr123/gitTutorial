@@ -12,9 +12,12 @@
     <pre>
         <!-- https://progressbar.tw/posts/3 -->
         <!-- https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/24.md -->
+        <!-- git  -->
+        <!-- https://backlog.com/git-tutorial/tw/reference/basic.html -->
     
+
         #在 GitHub 建立一個「沒有版本」的空白 Git 儲存庫，然後透過 git clone 取得遠端儲存庫，再建立版本後上傳
-        1.先去 githup 建立 new repository
+        1.先去 githup 建立 new repository 複製 https://github.com/sstudentr123/檔案名稱.git
         2.回到專案(終端機)鍵入   
             <!-- 下載git -->
             git clone https://github.com/sstudentr123/gitTutorial.git
@@ -22,23 +25,12 @@
             cd gittutorial
             <!-- 新增README.md檔 內容 "# gitTutorial" -->
             echo a > a.text
+            <!-- 註冊檔案或目錄到索引 '.'可以子目錄裡的所有檔案註冊到索引裡-->
             git add .
+            <!-- 提交添加到索引的檔案 '-m'參數，就可以指令提交“提交訊息”-->
             git commit -m 'initial commit'
+            <!-- '-u' 參數，才能成功地把本地儲存庫上傳到 GitHub  origin 表示遠端，master 表示分支名-->
             git push -u  origin master
-
-
-            
-        <!-- 2.複製 https://github.com/sstudentr123/檔案名稱.git -->
-
-        <!-- 3.回到專案新增資料 -->
-
-            <!-- (終端機)
-            
-            echo "# gitTutorial" >> README.md 
-            git init 
-            git add README.md
-            git commit -m "first commit" 
-            git remote add origin https://github.com/sstudentr123/gitTutorial.git git push -u origin master -->
         
     </pre>
 </body>
